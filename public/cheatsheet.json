@@ -1,0 +1,229 @@
+[{
+        "category": "Setup",
+        "description": "Sets user name used across all local repositories",
+        "command": "git config --global user.name “[firstname lastname]”",
+        "keywords": ["setup", "configuration", "name", "email", "user"]
+    },
+    {
+        "category": "Setup",
+        "description": "Sets user email used across all local repositories",
+        "command": "git config --global user.email “[valid-email]”",
+        "keywords": ["setup", "configuration", "name", "email", "user"]
+    },
+    {
+        "category": "Setup",
+        "description": "Sets automatic command line coloring for Git for easy reviewing",
+        "command": "git config --global color.ui auto",
+        "keywords": ["setup", "configuration", "color", "ui", "customization"]
+    },
+    {
+        "category": "Init",
+        "command": "git init",
+        "description": "Initializes an existing directory as a Git repository",
+        "keywords": ["new", "project", "create"]
+    },
+    {
+        "category": "Init",
+        "command": "git clone [url]",
+        "description": "Retrieves an entire repository from a hosted location via URL",
+        "keywords": ["download", "remote", "clone", "checkout"]
+    },
+    {
+        "category": "Stage & Snapshot",
+        "command": "git status",
+        "description": "Shows modified files in working directory, staged for your next commit",
+        "keywords": ["change", "modifications", "commit"]
+    },
+    {
+        "category": "Stage & Snapshot",
+        "command": "git add [file]",
+        "description": "Adds a file as it looks now to your next commit (stage)",
+        "keywords": ["change", "modifications", "commit"]
+    },
+    {
+        "category": "Stage & Snapshot",
+        "command": "git reset [file]",
+        "description": "Unstages a file while retaining the changes in working directory",
+        "keywords": ["change", "modifications", "commit"]
+    },
+    {
+        "category": "Stage & Snapshot",
+        "command": "git diff",
+        "description": "Shows file differences not yet staged",
+        "keywords": ["modifications", "changes", "diff"]
+    },
+    {
+        "category": "Stage & Snapshot",
+        "command": "git diff --staged",
+        "description": "Shows file differences between staging and the last file version",
+        "keywords": ["modifications"]
+    },
+    {
+        "category": "Stage & Snapshot",
+        "command": "git commit -m [descriptive message]",
+        "description": "Records staged snapshots in version history",
+        "keywords": ["commit"]
+    },
+    {
+        "category": "Branch & Merge",
+        "command": "git branch",
+        "description": "Lists all local branches in the current repository",
+        "keywords": []
+    },
+    {
+        "category": "Branch & Merge",
+        "command": "git branch [branch-name]",
+        "description": "Creates a branch",
+        "keywords": []
+    },
+    {
+        "category": "Branch & Merge",
+        "command": "git merge [branch-name]",
+        "description": "Merges the specified branch’s history into the current branch",
+        "keywords": []
+    },
+    {
+        "category": "Branch & Merge",
+        "command": "git checkout [branch-name]",
+        "description": "Switches to the specified branch",
+        "keywords": []
+    },
+    {
+        "category": "Branch & Merge",
+        "command": "git checkout -b [branch-name]",
+        "description": "Creates a branch and switch to it",
+        "keywords": []
+    },
+    {
+        "category": "Branch & Merge",
+        "command": "git checkout -m [new-branch-name]",
+        "description": "Renames branch",
+        "keywords": []
+    },
+    {
+        "category": "Branch & Merge",
+        "command": "git branch -d [branch-name]",
+        "description": "Deletes the specified branch, locally",
+        "keywords": []
+    },
+    {
+        "category": "Tracking path changes",
+        "command": "git rm [file]",
+        "description": "Deletes the file from the working directory and stages the deletion",
+        "keywords": []
+    },
+    {
+        "category": "Tracking path changes",
+        "command": "git rm --cached [file]",
+        "description": "Removes the file from version control but preserves the file locally",
+        "keywords": []
+    },
+    {
+        "category": "Tracking path changes",
+        "command": "git mv [from] [to]",
+        "description": "Renames the file",
+        "keywords": []
+    },
+    {
+        "category": "Tracking path changes",
+        "command": "git log",
+        "description": "Shows the commit history for the currently active branch",
+        "keywords": []
+    },
+    {
+        "category": "Tracking path changes",
+        "command": "git log --stat -M",
+        "description": "Shows all commit logs with indication of any paths that moved",
+        "keywords": []
+    },
+    {
+        "category": "Temporary commits",
+        "command": "git stash",
+        "description": "Temporarily stores all modified tracked files",
+        "keywords": []
+    },
+    {
+        "category": "Temporary commits",
+        "command": "git stash pop",
+        "description": "Restores the most last stashed files and deletes the stashed changeset",
+        "keywords": []
+    },
+    {
+        "category": "Temporary commits",
+        "command": "git stash list",
+        "description": "Lists all stashed changesets",
+        "keywords": []
+    },
+    {
+        "category": "Temporary commits",
+        "command": "git stash drop",
+        "description": "Deletes the last stashed changeset",
+        "keywords": []
+    },
+    {
+        "category": "Rewrite history",
+        "command": "git reset [commit]",
+        "description": "Undoes all commits afer [commit], preserving changes locally",
+        "keywords": []
+    },
+    {
+        "category": "Rewrite history",
+        "command": "git reset --hard [commit]",
+        "description": "Discards all history and changes back to the specified commit",
+        "keywords": []
+    },
+    {
+        "category": "Rewrite history",
+        "command": "git reset –hard HEAD",
+        "description": "Discards all local changes in the working directory",
+        "keywords": []
+    },
+    {
+        "category": "Rewrite history",
+        "command": "git commit --amend",
+        "description": "Changes the commit message",
+        "keywords": ["undo", "message", "commit"]
+    },
+    {
+        "category": "Share & Update",
+        "command": "git remote add [alias] [url]",
+        "description": "Adds a git URL as an alias",
+        "keywords": []
+    },
+    {
+        "category": "Share & Update",
+        "command": "git push [alias] [branch]",
+        "description": "Pushes all local changesets to the remote repository",
+        "keywords": []
+    },
+    {
+        "category": "Share & Update",
+        "command": "git pull",
+        "description": "Downloads new remote history and incorporate changes",
+        "keywords": []
+    },
+    {
+        "category": "Share & Update",
+        "command": "git remote -v",
+        "description": "Shows the name of remote repositories",
+        "keywords": []
+    },
+    {
+        "category": "Share & Update",
+        "command": "git fetch [alias]",
+        "description": "Gets the latest changes from the origin but not merge",
+        "keywords": []
+    },
+    {
+        "category": "Share & Update",
+        "command": "git merge [alias]/[branch]",
+        "description": "Merges a remote branch into your current branch to bring it up to date",
+        "keywords": []
+    },
+    {
+        "category": "Share & Update",
+        "command": "git remote rm [remote repo name]",
+        "description": "Removes the remote repository",
+        "keywords": []
+    }
+]

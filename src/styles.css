@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+* {
+	font-family: 'Comfortaa', cursive;
+}
+
+body {
+	background-color: #283739;
+}
+
+.header{
+	height: 35px;
+}
+
+.card {
+	background-color: #283739;
+	border-color: #a9c52f;
+	margin-top: 10px;
+}
+
+.card-header {
+	background-color: #283739;
+	background-color: #f7eebb;
+	font-weight: bolder;
+	color: #283739;
+}
+
+.description {
+	background-color: #283739;
+	color: #a9c52f;
+	font-size: 0.8em;
+}
+
+.command {
+	background-color: #283739;
+	cursor: pointer;
+	color: #f7eebb;
+	font-size: 1em;
+	font-weight: bold;
+	border: none;
+	text-align: left;
+	padding-left: 0;
+}
+
+button:focus {outline:0;}
